@@ -8,6 +8,7 @@
  */
 
 // Divide-and-conquer
+// Depth-first search (DFS)
 // Recursive
 
 /* Organized */
