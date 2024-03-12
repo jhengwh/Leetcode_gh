@@ -24,7 +24,7 @@ bool canConstruct(char* ransomNote, char* magazine)
     return true;
 }
 
-/** My original
+/** My original attempt
  * Time complexity:  O(mlogm + nlogn)
  * Space complexity: O(logm + logn)
  * where m = len(magazine); n = len(ransomNote)
