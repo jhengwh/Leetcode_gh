@@ -1,5 +1,6 @@
-/* Solution 1  (from Leetcode) */
-// 2 head pointers
+/** Solution 1  (from Leetcode)
+ * Two head pointers
+ */
 int removeElement(int* nums, int numsSize, int val)
 {
     int index = 0;
@@ -12,8 +13,10 @@ int removeElement(int* nums, int numsSize, int val)
     return index;
 }
 
-/* Solution 2  (my original) */
-// 2 pointers; one from head, one from tail
+/** Solution 2  (my original)
+ * Two pointers
+ * One from head, one from tail
+ */
 int removeElement(int* nums, int numsSize, int val)
 {
     int i = 0, j = numsSize - 1, k = 0;
