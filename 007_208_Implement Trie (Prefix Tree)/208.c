@@ -21,6 +21,8 @@ Trie* trieCreate()
         pNode->isEndOfWord = false;
         for (i = 0; i < ALPHABET_SIZE; i++)
             pNode->children[i] = NULL;
+    } else {
+        ;    // raise error
     }
     return pNode;
 }

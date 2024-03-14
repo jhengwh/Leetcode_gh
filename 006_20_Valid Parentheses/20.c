@@ -14,9 +14,13 @@ struct Stack {
 struct Stack* createStack(unsigned capacity)
 {
     struct Stack* stack = (struct Stack*)malloc(sizeof(struct Stack));
+    if (!stack)
+        ;    // raise error
     stack->capacity = capacity;
     stack->top = -1;
     stack->array = (char*)malloc(stack->capacity * sizeof(char));
+    if (!stack->array)
+        ;    // raise error
     return stack;
 }
 
