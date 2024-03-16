@@ -21,6 +21,7 @@ struct ListNode* mergeTwoLists(struct ListNode* list1,
 {
     struct ListNode *head = NULL, *prev = NULL;
 
+    // When both 2 lists have remaining nodes
     while (list1 && list2) {
         if (list2->val < list1->val)
             connectNode(&list2, &head, &prev);
@@ -28,6 +29,7 @@ struct ListNode* mergeTwoLists(struct ListNode* list1,
             connectNode(&list1, &head, &prev);
     }
 
+    // When only 1 or none of them has remaining nodes
     if (list1)
         connectNode(&list1, &head, &prev);
     if (list2)
