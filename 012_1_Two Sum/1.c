@@ -2,7 +2,7 @@
  * Note: The returned array must be malloced, assume caller calls free().
  */
 
-typedef struct {
+typedef struct _Number {
     int num;
     int index;
 } Number;
