@@ -1,5 +1,5 @@
 /* Solution from Leetcode */
-int hammingWeight(uint32_t n)
+int hammingWeight(int n)
 {
     int weight = 0;
     while (n) {
