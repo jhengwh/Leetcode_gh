@@ -18,11 +18,11 @@ int hammingWeight(uint32_t n)
 //     char str[11] = "";
 //     char* pStr = str;
 //     int weight = 0, len = 0;
-
+//
 //     sprintf(str, "%x", n);
 //     len = strlen(str);
 //     str[len] = '\0';
-
+//
 //     while (*pStr) {
 //         switch (*pStr) {
 //         case '1': case '2': case '4': case '8':
